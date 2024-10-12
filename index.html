@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="1008238242092-62e9go79veseaboueueo9hu5p75i6ufv.apps.googleusercontent.com">
+    <title>Shree Gurudatta sadan co.HSG</title>
+    <link rel="stylesheet" href="style.css">
+       <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   -->
+</head>
+<body>
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <div class="navbar">
+        <img  class="logo" id="button" src="./image/sgs logo.jpg"/>
+        <nav>
+        <h1>SHREE GURUDATTA SADAN</h1>
+        </div>
+    </nav>
+    
+  <div class="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#About" class="active">About</a>
+        <a href="./Paymant" class="active">Payment</a>
+         <a href="#contact-us" class="active">Contact Us</a>
+        </div>
+    
+        <div class="dropdown">
+            <ul>
+         <li><a href="index.html" class="active">Home</a></li> 
+         <li><a href="#about" class="active">About</a></li>
+        <li><a href="./Paymant" class="active">Payment</a></li>
+          <li><a href="#contact-us" class="active">Contact Us</a></li>  
+            </ul>
+            <div class="close">
+                <button>Close</button>
+            </div>
+        </div>
+        
+  
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div class="data">
+            <p>Name</p>
+            <p id="name" class="alert-success"></p>
+            <p>profile pic</p>
+            <img id="image" class="rounded-circle" width="100" height="100"/>
+            <p>Email</p>
+            <p id="email"></p>
+            <button type="button" class="btn btn-danger" onclick="signOut();">sign out</button>
+        </div>
+     
+  <div id="home" class="home">
+    <div class="ani"><span></span></div>
+    
+    <!-- <div class="download-img"> -->
+        <img class="home-img" src="./image/sgs download img.webp"alt=img>
+    <!-- </div> -->
+    <div id="info">
+        <p><h2>Built for Society with all the features and rewards you love,<br> plus much more.</h2></p>
+        <br>
+     <p><h2>The simplest way to pay maintenance and at that same time<br> download the Receipt!!</h2></p>
+    </div>
+  </div>
+
+  <div id="About" class="About">
+   <h2>Getting started is quick and easy</h2>
+  <box> 
+   <img class="click" src="./image/one-finger-click- logo.png"  alt=img>
+   <h3>Click on Payment option</h3>  
+</box>
+<img class="click-line" src="./image/line_horizontal.png" alt="img">
+  <box>
+   <img class="fill-up" src="./image/fill up logo.png"alt=img>
+   <h3>Fill-up all details</h3>
+  </box>
+  <box>
+   <img class="payment" src="./image/payment logo.png"alt=img>
+   <h3>Click on Payment button</h3>
+</box>
+<box>
+   <img class="download" src="./image/download logo.png"alt=img>
+   <h3>Download Receipt</h3>
+</box>
+</div>
+<div class="contact-us">
+  <h2>Contact Us</h2>
+  <form id="fillUpForm">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+    <div class="form-group">
+      <label for="flat no.">Flat no.:</label>
+      <input type="number" id="number" name="number" required>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+</div>
+<div class="form-group">
+    <label for="comments">Massage:</label>
+    <textarea id="comments" name="comments" required></textarea>
+</div>
+
+  <div class="container">
+    <a href="#" class="button" id="button">Submit</a>
+</div> 
+</form> 
+</div>
+  
+<script src="index.js"></script>
+</body>
+</html>
